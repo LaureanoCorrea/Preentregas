@@ -27,8 +27,8 @@
     "id": 3
   },
   {
-    "title": "Producto editado",
-    "description": "Una descripción nueva del producto",
+    "title": "Producto 4",
+    "description": "actualizacion de nombre",
     "price": 19.99,
     "thumbnail": "ruta/imagen4.jpg",
     "code": "P12889",
@@ -36,7 +36,8 @@
     "id": 4,
     "category": "Electrónicos",
     "thumbnails": [
-      "url1.jpg"
+      "url1.jpg",
+      "url2.jpg"
     ],
     "status": true
   },
@@ -68,11 +69,11 @@
     "id": 7
   },
   {
-    "title": "Producto actualizado",
-    "description": "Una descripción del producto",
+    "title": "Producto 8",
+    "description": "actualizacion de nombre",
     "price": 19.99,
-    "thumbnail": "ruta/imagen8.jpg",
-    "code": "P123",
+    "thumbnail": "ruta/imagen4.jpg",
+    "code": "P18889",
     "stock": 50,
     "id": 8,
     "category": "Electrónicos",
@@ -83,18 +84,24 @@
   },
   {
     "title": "Producto 9",
-    "description": "Descripcion del producto 9",
+    "description": "actualizacion de nombre",
     "price": 19.99,
-    "thumbnail": "ruta/imagen9.jpg",
-    "code": "ABC123",
+    "thumbnail": "ruta/imagen4.jpg",
+    "code": "P18909",
     "stock": 50,
+    "category": "Electrónicos",
+    "thumbnails": [
+      "url1.jpg"
+    ],
+    "status": true,
     "id": 9
   },
   {
-    "title": "Producto Agregado",
-    "description": "Una descripción nueva del producto",
+    "title": "Producto 10",
+    "description": "prueba actualizacion",
     "price": 19.99,
-    "code": "P174889",
+    "thumbnail": "ruta/imagen4.jpg",
+    "code": "P19089d",
     "stock": 50,
     "category": "Electrónicos",
     "thumbnails": [

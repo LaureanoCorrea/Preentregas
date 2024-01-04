@@ -1,12 +1,25 @@
-const socket = io();
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+    <title>Lista de Productos en tiempo Real</title>
+  </head>
+  <body>
 
-socket.on('updateProducts', updatedProducts => {
-    const productList = document.getElementById('productList');
-    productList.innerHTML = '';
+    <div id="productListContainer">
+      <h1>Lista de Productos en tiempo Real</h1>
+      <ul id="productList"></ul>
+    </div>
 
-    updatedProducts.forEach(product => {
-        const listItem = document.createElement('li');
-        listItem.textContent = product.title;
-        productList.appendChild(listItem);
-    });
-});
+    <script>
+      const socket = io(); socket.on('updateProductsList', updatedProducts => {
+      const productList = document.getElementById('productList');
+      productList.innerHTML = ''; updatedProducts.forEach(product => { const
+      listItem = document.createElement('li'); listItem.textContent =
+      product.title; productList.appendChild(listItem); }); });
+    </script>
+
+  </body>
+</html>

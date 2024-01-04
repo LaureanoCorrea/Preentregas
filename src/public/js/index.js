@@ -1,7 +1,17 @@
-const socket = io(); //lado cliente
+function setupSocket() {
+  const socket = io();
 
-socket.emit("message", "hola desde el cliente");
-socket.on("para-todos", data => {
-    console.log(data);
-})
+  socket.on("updateProductsList", (updatedProducts) => {
+      console.log(updatedProducts);
+      const productList = document.getElementById("productList");
+      productList.innerHTML = "";
 
+      updatedProducts.forEach((product) => {
+          const listItem = document.createElement("li");
+          listItem.textContent = product.title;
+          productList.appendChild(listItem);
+      });
+  });
+}
+
+setupSocket();
